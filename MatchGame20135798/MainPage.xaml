@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatchGame20135798.MainPage"
+             Title="Find all of the matching animals">
+
+    <Grid x:Name="mainGrid" Padding="10" RowSpacing="5" ColumnSpacing="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="1">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="2">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="3">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="1">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="2">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="3">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="2" Grid.Column="0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="2" Grid.Column="1">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="2" Grid.Column="2">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="2" Grid.Column="3">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="3" Grid.Column="0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="3" Grid.Column="1">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="3" Grid.Column="2">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="3" Grid.Column="3">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Label_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label x:Name="timeLabel"
+               Text="Elapsed time"
+               FontSize="30"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Grid.Row="4"
+               Grid.ColumnSpan="4">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TimeLabel_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        
+    </Grid>
+</ContentPage>
