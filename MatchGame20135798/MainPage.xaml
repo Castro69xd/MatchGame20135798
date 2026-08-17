@@ -1,16 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- ContentPage: la pantalla principal del juego -->
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MatchGame20135798.MainPage"
              Title="Find all of the matching animals">
 
+    <!-- Grid principal: organiza el tablero en filas y columnas -->
     <Grid x:Name="mainGrid" Padding="10" RowSpacing="5" ColumnSpacing="5">
+
+        <!-- 4 columnas iguales para las 16 casillas del juego (4x4) -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+
+        <!-- 4 filas para las casillas + 1 fila para el cronometro + 1 fila para el NIE -->
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -20,6 +26,7 @@
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
+        <!-- Cada Label representa una casilla del juego. Empieza con "?" y al tocarla, TapGestureRecognizer dispara Label_Tapped -->
         <Label Text="?" FontSize="36" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Label_Tapped" />
@@ -104,6 +111,7 @@
             </Label.GestureRecognizers>
         </Label>
 
+        <!-- Label del cronometro: ocupa las 4 columnas (Grid.ColumnSpan="4"). Al tocarlo cuando el juego termino, reinicia -->
         <Label x:Name="timeLabel"
                Text="Elapsed time"
                FontSize="30"
@@ -115,6 +123,15 @@
                 <TapGestureRecognizer Tapped="TimeLabel_Tapped" />
             </Label.GestureRecognizers>
         </Label>
-        
+
+        <!-- Label fijo con el NIE del estudiante, no interactivo -->
+        <Label Text="NIE: 20135798"
+               FontSize="16"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Grid.Row="5"
+               Grid.ColumnSpan="4" />
+
     </Grid>
 </ContentPage>
